@@ -1,0 +1,14 @@
+	Use the following command to get rsa key
+	ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+	
+	Turn on the agent
+	eval "$(ssh-agent -s)" # for Git Bash
+	eval $(ssh-agent -s)   # for other terminal prompt
+	
+	Add your key to the ssh-agent
+	ssh-add ~/.ssh/id_rsa
+
+	Switching remote URLs from SSH to HTTPS
+		List your existing remotes in order to get the name of the remote you want
+		to change
+		git remote -v

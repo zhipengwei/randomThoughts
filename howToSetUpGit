@@ -5,8 +5,9 @@
 	eval "$(ssh-agent -s)" # for Git Bash
 	eval $(ssh-agent -s)   # for other terminal prompt
 	
-	Add your key to the ssh-agent
+	# Add your key to the ssh-agent
 	ssh-add ~/.ssh/id_rsa
+	# If the keys can't be created, check the permission of the folder, ~/.ssh/
 
 	Switching remote URLs from SSH to HTTPS
 		List your existing remotes in order to get the name of the remote you want
